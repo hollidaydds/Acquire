@@ -1,11 +1,10 @@
-﻿using Acquire.Boards;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Acquire.Objects.Boards
 {
-    class GameBoard
+    public class GameBoard
     {
         public List<Tile> Tiles { get; set; }
 

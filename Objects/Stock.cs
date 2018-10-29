@@ -7,11 +7,11 @@ namespace Acquire.Objects
 {
     public class Stock
     {
-        public TileType StockType { get; set; }
+        public StockType StockType { get; set; }
 
-        public Stock(TileType tileType)
+        public Stock(StockType stockType)
         {
-            StockType = tileType;
+            StockType = stockType;
         }
     }
 }

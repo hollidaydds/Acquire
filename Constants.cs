@@ -11,5 +11,6 @@ namespace Acquire
         public static int HighEndHotelBasePrice => 200;
         public static int DefaultStartingBalance => 2000;
         public static int SafeHotelChainSize => 13;
+        public static int DefaultStocksPerHotel => 13;
     }
 }

@@ -40,5 +40,29 @@ namespace Acquire
             [Description("C")]
             Continental,
         }
+
+        public enum StockType
+        {
+            [Description("T")]
+            Tower,
+
+            [Description("L")]
+            Luxor,
+
+            [Description("A")]
+            American,
+
+            [Description("F")]
+            Festival,
+
+            [Description("W")]
+            WorldWide,
+
+            [Description("I")]
+            Imperial,
+
+            [Description("C")]
+            Continental,
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using static Acquire.Enums;
 
-namespace Acquire.Boards
+namespace Acquire.Objects.Boards
 {
     public class Tile
     {

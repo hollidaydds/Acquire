@@ -1,4 +1,4 @@
-﻿using Acquire.Boards;
+﻿using Acquire.Objects.Boards;
 using System;
 using System.Collections.Generic;
 using System.Text;
