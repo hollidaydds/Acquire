@@ -1,6 +1,7 @@
 ﻿using Acquire.Objects.Boards;
 using Acquire.Repositories;
 using System;
+using static Acquire.Enums;
 
 namespace Acquire
 {
@@ -8,28 +9,23 @@ namespace Acquire
     {
         static void Main(string[] args)
         {
-            TileManager tileManager = new TileManager();
             GameBoardManager gameBoardManager = new GameBoardManager();
 
-            tileManager.UpdateTileType(gameBoardManager.GetTileByCoordinates(1, 1), Enums.TileType.Blocked);
+            gameBoardManager.PlaceTileByCoordinatesAndTileType(new Coordinates(1, 1), TileType.Placed);
 
             gameBoardManager.PrintBoard();
 
+            gameBoardManager.PlaceTileByCoordinatesAndTileType(new Coordinates(4, 5), TileType.American);
 
-            //foreach (Tile t in gameBoard.Tiles)
-            //{
-            //    Console.WriteLine($"row: {t.Coordinates.Row} col:{t.Coordinates.Column} type:{t.TileType}");
-            //}
-
-
-
-            var hi = gameBoardManager.GetTileByCoordinates(3, 4);
-
-            tileManager.UpdateTileType(hi, Enums.TileType.Placed);
-            var tiles = gameBoardManager.GetTileNeigborsByCoordinates(1, 1);
-
-            tileManager.UpdateTileType(gameBoardManager.GetTileByCoordinates(3, 4), Enums.TileType.Continental);
             gameBoardManager.PrintBoard();
+
+            gameBoardManager.PlaceTileByCoordinatesAndTileType(new Coordinates(5, 5), TileType.American);
+
+            gameBoardManager.PrintBoard();
+
+            Console.WriteLine(gameBoardManager.GetTileTypeCount(TileType.Placed));
+
+            Console.WriteLine(gameBoardManager.GetTileTypeCount(TileType.American));
 
             Console.ReadLine();            
             Console.WriteLine("Hello World!");
