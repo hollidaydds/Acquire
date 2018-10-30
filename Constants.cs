@@ -12,5 +12,8 @@ namespace Acquire
         public static int DefaultStartingBalance => 2000;
         public static int SafeHotelChainSize => 13;
         public static int DefaultStocksPerHotel => 13;
+        public static int DefaultGameBoardColumns => 12;
+        public static int DefaultGameboardRows => 9;
+
     }
 }

@@ -12,6 +12,7 @@ namespace Acquire.Objects.Hotels
             Price = Constants.LowEndHotelBasePrice;
             TileType = Enums.TileType.Luxor;
             IsSafe = false;
+            ChainSize = 0;
         }
     }
 }

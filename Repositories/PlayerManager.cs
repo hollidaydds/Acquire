@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Acquire.Repositories
 {
-    class PlayerManagement
+    class PlayerManager
     {
         // Balance Management
         public void AddPLayerBalance(Player player, int amount)

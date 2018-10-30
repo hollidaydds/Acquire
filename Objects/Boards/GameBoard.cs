@@ -11,14 +11,13 @@ namespace Acquire.Objects.Boards
         public GameBoard()
         {
             Tiles = new List<Tile>();
-            for (int i = 1; i <= 12; i++)
+            for (int i = 1; i <= Constants.DefaultGameboardRows; i++)
             {
-                for (int j = 1; j <= 9; j++)
+                for (int j = 1; j <= Constants.DefaultGameBoardColumns; j++)
                 {
                     Tiles.Add(new Tile(i, j));
                 }
             }
         }
-
     }
 }

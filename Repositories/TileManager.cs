@@ -6,7 +6,7 @@ using static Acquire.Enums;
 
 namespace Acquire.Repositories
 {
-    public class TileManagement
+    public class TileManager
     {
         public void UpdateTileType(Tile tile, TileType tileType)
         {
